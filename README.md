@@ -1,56 +1,97 @@
-# <Your-Project-Title>
+# Mini InstaPay
 
-## Description
+Mini InstaPay is a lightweight digital payment solution that enables quick and easy peer-to-peer money transfers. This simplified version of traditional payment apps focuses on providing instant transactions with minimal steps, making it perfect for users who want a straightforward way to send and receive money. The platform combines speed, security, and simplicity to deliver a hassle-free payment experience.
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+## ✨ User Features
 
-## Table of Contents (Optional)
+* Send & Receive Money: Instantly transfer funds to other users with real-time transaction processing and confirmation.
+* Transaction Limits: Set personal daily, weekly, or monthly transaction limits to maintain control over spending and enhance security.
+* Transaction History: Access detailed transaction records with comprehensive filtering and search capabilities.
+* Refund System: Easily initiate and process refunds for incorrect or disputed transactions.
+* Bank Account Management: Securely link and manage multiple bank accounts for transfers.
+* Profile Management: Update personal information, contact details, and security preferences.
+* Account Analytics: View detailed usage statistics, spending patterns, and account activity metrics.
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
+## 🛠️ Tech Stack
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+### Frontend
+* Framework: React.js
+* State Management: useState Hook
+* Styling: Tailwind CSS, Vanilla CSS
 
-## Installation
+### Backend
+* Runtime: Node.js
+* Framework: NestJS
+* Database: [e.g., PostgreSQL, MongoDB]
+* Authentication: JWT
+* API Documentation: Swagger
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+## 📋 Prerequisites
 
-## Usage
+List everything needed to run your project:
 
-Provide instructions and examples for use. Include screenshots as needed.
+```bash
+Node.js >= 16.0.0
+npm >= 8.0.0
+PostgreSQL >= 13.0 
+```
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+## 🔧 Installation
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+1. Clone the repository
+```bash
+git clone https://github.com/mazen568/Mini_InstaPay.git
+cd instapay
+```
 
-## Credits
+2. Install frontend dependencies
+```bash
+cd frontend
+npm install
+```
 
-List your collaborators, if any, with links to their GitHub profiles.
+3. Install backend dependencies
+```bash
+cd backend
+npm install
+```
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
 
-If you followed tutorials, include links to those here as well.
 
-## License
+5. Set up the database
+```bash
+cd backend
+npm run migration:run  # Run TypeORM migrations
+npm run seed  # if you have seed data
+```
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+## 🚀 Running the Application
 
----
+1. Start the backend server
+```bash
+cd backend
+npm run start:dev  # for development with watch mode
+# or
+npm run start:prod # for production
+```
 
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
+2. Start the frontend application
+```bash
+cd frontend
+npm run dev
+```
 
-## Badges
+The application should now be running at:
+* Frontend: http://localhost:5713
+* Backend: http://localhost:3000
 
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
 
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
+## 📦 API Documentation
+
+Your API documentation is automatically generated using Swagger. Once the application is running, you can access it at:
+
+```
+http://localhost:3000/api
+```
 
