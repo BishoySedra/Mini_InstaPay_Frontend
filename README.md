@@ -13,6 +13,13 @@ Mini InstaPay is a lightweight digital payment solution that enables quick and e
 * Profile Management: Update personal information, contact details, and security preferences.
 * Account Analytics: View detailed usage statistics, spending patterns, and account activity metrics.
 
+## ✨ Admin Features
+
+* User Management: Complete oversight of user accounts with the ability to view and manage all registered users.
+* Transaction Monitoring: Access to all platform transactions with detailed audit trails.
+* Account Control: Authority to suspend user accounts in cases of suspicious activity or policy violations.
+* Transaction Control: Ability to halt or reverse suspicious transactions to maintain platform security.
+
 ## 🛠️ Tech Stack
 
 ### Frontend
