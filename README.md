@@ -1,5 +1,5 @@
 # Project Name
-A full-stack application that allows users to manage their profiles.
+MiniInstaPay
 
 ## Table of Contents
 - [Frontend](#frontend)
@@ -11,14 +11,56 @@ A full-stack application that allows users to manage their profiles.
 
 ## Frontend
 
-The frontend is built using React.
+The frontend is built using React, Vite, Tailwind CSS, and CSS.
 
 ### Technologies Used
 - React
 - Axios for API requests
-- CSS/SCSS for styling
+- Tailwind CSS for styling
+- Vite for fast development setup
 
 ### Installation
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/your-repo.git
+   
+   git clone https://github.com/mazen568/Mini_InstaPay.git
+Navigate to the project root directory:
+
+Copy code
+cd instapay
+Navigate to the frontend directory:
+
+Copy code
+cd frontend
+Install dependencies:
+
+Copy code
+npm install
+Running the Frontend
+To start the frontend locally, run:
+
+
+Copy code
+npm run dev
+
+Backend
+The backend is built using NestJS.
+
+Technologies Used
+NestJS (for backend API)
+Prisma Studio (for database interactions)
+JWT for authentication
+Installation
+Navigate to the backend directory:
+
+Copy code
+cd backend
+Install dependencies:
+
+Copy code
+npm install
+Running the Backend
+To start the backend locally, run:
+
+
+Copy code
+npm run start:dev
