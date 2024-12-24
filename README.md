@@ -34,6 +34,7 @@ Mini InstaPay is a lightweight digital payment solution that enables quick and e
 * Authentication: JWT
 * API Documentation: Swagger
 
+
 ## 📋 Prerequisites
 
 List everything needed to run your project:
@@ -62,6 +63,12 @@ npm install
 ```bash
 cd backend
 npm install
+```
+
+### 🔌 Frontend-Backend Integration
+```bash
+cd frontend
+npm install axios
 ```
 
 ## 🚀 Running the Application
