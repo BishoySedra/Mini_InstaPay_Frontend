@@ -23,7 +23,7 @@ Mini InstaPay is a lightweight digital payment solution that enables quick and e
 ### Backend
 * Runtime: Node.js
 * Framework: NestJS
-* Database: [e.g., PostgreSQL, MongoDB]
+* Database: PostgreSQL
 * Authentication: JWT
 * API Documentation: Swagger
 
@@ -55,15 +55,6 @@ npm install
 ```bash
 cd backend
 npm install
-```
-
-
-
-5. Set up the database
-```bash
-cd backend
-npm run migration:run  # Run TypeORM migrations
-npm run seed  # if you have seed data
 ```
 
 ## 🚀 Running the Application
