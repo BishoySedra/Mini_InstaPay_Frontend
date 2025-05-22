@@ -24,7 +24,7 @@ Mini InstaPay is a lightweight digital payment solution that enables quick and e
 
 ### Frontend
 * Framework: React.js
-* State Management: useState Hook
+* State Management: Redux and useState hook
 * Styling: Tailwind CSS, Vanilla CSS
 
 ### Backend
