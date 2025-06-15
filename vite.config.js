@@ -5,4 +5,5 @@ export default defineConfig({
   base: '/Mini_InstaPay_Frontend/',
   plugins: [react()]
 });
+
 // This configuration sets the base path for the application to '/Mini_InstaPay_Frontend/'
