@@ -1,7 +1,10 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
+// Replace with your repo name
+const repoName = 'Mini_InstaPay_Frontend'
+
 export default defineConfig({
-  plugins: [react()]
-});
+  plugins: [react()],
+  base: `/${repoName}/`
+})
