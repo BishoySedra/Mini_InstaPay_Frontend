@@ -1,7 +1,7 @@
 {
   "name": "react-essentials-start",
   "version": "0.0.0",
-  "homepage": "https://bishoysedra.github.io/Mini_InstaPay_Frontend/",
+  "homepage": "https://bishoysedra.github.io/Mini_InstaPay_Frontend",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
