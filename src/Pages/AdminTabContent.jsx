@@ -38,7 +38,7 @@ function TabContent({
     const fetchUsers = async () => {
       try {
         const token = localStorage.getItem("token");
-        const response = await axios.get("http://localhost:3000/admin/users", {
+        const response = await axios.get("https://mini-instapay-api.onrender.com/admin/users", {
           params: { page: 1, pageSize: 24 },
           headers: { Authorization: `Bearer ${token}` },
         });
@@ -70,7 +70,7 @@ function TabContent({
 
           // Use the correct endpoint with query parameter
           const response = await axios.get(
-            `http://localhost:3000/admin/userDetails/${selectedUser.id}`,
+            `https://mini-instapay-api.onrender.com/admin/userDetails/${selectedUser.id}`,
             {
               headers: {
                 Authorization: `Bearer ${token}`,

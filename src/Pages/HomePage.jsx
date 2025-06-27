@@ -23,7 +23,7 @@ export default function HomePage({focus,setFocus}) {
     const fetchUserStatus = async () => {
       const token = localStorage.getItem("token");
       try {
-        const response = await axios.get("http://localhost:3000/auth/status", {
+        const response = await axios.get("https://mini-instapay-api.onrender.com/auth/status", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

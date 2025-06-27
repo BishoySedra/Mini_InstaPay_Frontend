@@ -77,7 +77,7 @@ const SignUpForm = ({ setMoveImage, loginMove, setLoginMove, setSignUpButton }) 
         }
     
         try {
-            const response = await axios.post('http://localhost:3000/auth/signup', {
+            const response = await axios.post('https://mini-instapay-api.onrender.com/auth/signup', {
                 name: enteredValues.name,
                 email: enteredValues.email,
                 password: enteredValues.password,

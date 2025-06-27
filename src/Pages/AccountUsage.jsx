@@ -10,7 +10,7 @@ export default function AccountUsage({ id }) {
     const fetchAccountUsage = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:3000/reports/account-usage', {
+        const response = await axios.get('https://mini-instapay-api.onrender.com/reports/account-usage', {
           headers: {
             Authorization: `Bearer ${token}`,
           },

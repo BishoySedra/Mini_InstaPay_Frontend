@@ -105,7 +105,7 @@ const SendMoney = () => {
             try {
                 const token = localStorage.getItem('token'); // Example: Retrieve token from storage
                 const response = await axios.post(
-                    "http://localhost:3000/transactions/make-transaction",
+                    "https://mini-instapay-api.onrender.com/transactions/make-transaction",
                     {
                         senderAccountNumber: formData.accountNumber,
                         receiverAccountNumber: formData.bankAccount,

@@ -18,7 +18,7 @@ const ReportsTab = () => {
       adjustedEndDate.setDate(adjustedEndDate.getDate() + 1);
       const formattedEndDate = adjustedEndDate.toISOString().split('T')[0];  // Format it back to YYYY-MM-DD
 
-      const { data } = await axios.get("http://localhost:3000/reports/transaction-summary", {
+      const { data } = await axios.get("https://mini-instapay-api.onrender.com/reports/transaction-summary", {
         params: { startDate, endDate: formattedEndDate },
         headers: {
           Authorization: `Bearer ${token}`,

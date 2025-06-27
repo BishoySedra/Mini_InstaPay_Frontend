@@ -14,7 +14,7 @@ function TransactionsTab() {
     const fetchTransactions = async () => {
         const token = localStorage.getItem("token");
         try {
-            const response = await axios.get("http://localhost:3000/admin/transactions", {
+            const response = await axios.get("https://mini-instapay-api.onrender.com/admin/transactions", {
                 params: { page: 1, pageSize: 40 },
                 headers: { Authorization: `Bearer ${token}` },
             });
@@ -37,7 +37,7 @@ function TransactionsTab() {
         try {
             // Send the suspend request to the backend
             await axios.patch(
-                `http://localhost:3000/admin/suspendTransaction/${transactionId}`,
+                `https://mini-instapay-api.onrender.com/admin/suspendTransaction/${transactionId}`,
                 {},
                 {
                     headers: { Authorization: `Bearer ${token}` },

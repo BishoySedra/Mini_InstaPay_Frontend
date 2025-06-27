@@ -40,7 +40,7 @@ function RefundAndDisputeResolution() {
         try {
             const token = localStorage.getItem("token"); // Include the token for authentication
             const response = await axios.post(
-                `http://localhost:3000/transactions/accept-refund/${formData.transactionId}`,
+                `https://mini-instapay-api.onrender.com/transactions/accept-refund/${formData.transactionId}`,
                 {},
                 {
                     headers: {

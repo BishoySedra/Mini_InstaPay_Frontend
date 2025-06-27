@@ -30,7 +30,7 @@ const LoginForm = ({ setMoveImage, setSignUpButton, setLoginMove, loginMove, ent
 
         try {
             // Make the API call to login
-            const response = await axios.post("http://localhost:3000/auth/login", {
+            const response = await axios.post("https://mini-instapay-api.onrender.com/auth/login", {
                 email,
                 password,
             });

@@ -26,7 +26,7 @@ export default function ProfilePage() {
     const fetchUserStatus = async () => {
       const token = localStorage.getItem("token");
       try {
-        const response = await axios.get("http://localhost:3000/users/status", {
+        const response = await axios.get("https://mini-instapay-api.onrender.com/users/status", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -61,7 +61,7 @@ export default function ProfilePage() {
           return;
         }
 
-        const response = await axios.get("http://localhost:3000/users/showBankAccounts", {
+        const response = await axios.get("https://mini-instapay-api.onrender.com/users/showBankAccounts", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -95,7 +95,7 @@ export default function ProfilePage() {
         const token = localStorage.getItem("token");
 
         const response = await axios.post(
-          "http://localhost:3000/users/linkBankAccount",
+          "https://mini-instapay-api.onrender.com/users/linkBankAccount",
           { accountNumber, bankName, balance },
           {
             headers: {
@@ -138,7 +138,7 @@ export default function ProfilePage() {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.delete(
-        `http://localhost:3000/users/unlinkBankAccount/${accountNumber}`,
+        `https://mini-instapay-api.onrender.com/users/unlinkBankAccount/${accountNumber}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -182,7 +182,7 @@ export default function ProfilePage() {
     if (Object.keys(validData).length > 0) {
       try {
         const response = await axios.patch(
-          "http://localhost:3000/users/updateProfile",
+          "https://mini-instapay-api.onrender.com/users/updateProfile",
           validData,
           {
             headers: {

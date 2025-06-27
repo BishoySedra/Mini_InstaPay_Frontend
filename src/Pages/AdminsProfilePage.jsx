@@ -39,7 +39,7 @@ export default function AdminProfilePage({
       try {
         // Send the PATCH request with the token in the Authorization header
         await axios.patch(
-          `http://localhost:3000/admin/suspendUser/${id}`,
+          `https://mini-instapay-api.onrender.com/admin/suspendUser/${id}`,
           {},
           {
             headers: {

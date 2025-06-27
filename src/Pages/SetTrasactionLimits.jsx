@@ -22,7 +22,7 @@ function SetTransactionLimits() {
 
     try {
       const response = await axios.patch(
-        "http://localhost:3000/users/updateProfile", // Use the updateProfile endpoint
+        "https://mini-instapay-api.onrender.com/users/updateProfile", // Use the updateProfile endpoint
         {
           dailyLimit: limit,  // Send only the dailyLimit field
         },

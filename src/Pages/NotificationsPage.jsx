@@ -12,7 +12,7 @@ export default function NotificationsPage() {
       const token = localStorage.getItem("token");
       try {
         // Fetch user status to get the ID
-        const userResponse = await axios.get("http://localhost:3000/auth/status", {
+        const userResponse = await axios.get("https://mini-instapay-api.onrender.com/auth/status", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -21,7 +21,7 @@ export default function NotificationsPage() {
         setId(userId);
 
         // Fetch notifications using the fetched ID
-        const notificationsResponse = await axios.get(`http://localhost:3000/notifications/${userId}`, {
+        const notificationsResponse = await axios.get(`https://mini-instapay-api.onrender.com/notifications/${userId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -43,7 +43,7 @@ export default function NotificationsPage() {
   const markAsRead = async (id) => {
     try {
       const token = localStorage.getItem("token");
-      await axios.patch(`http://localhost:3000/notifications/${id}/read`, null, {
+      await axios.patch(`https://mini-instapay-api.onrender.com/notifications/${id}/read`, null, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

@@ -12,7 +12,7 @@ function ReceiveMoney() {
         const fetchUserStatus = async () => {
             const token = localStorage.getItem("token");
             try {
-                const response = await axios.get("http://localhost:3000/auth/status", {
+                const response = await axios.get("https://mini-instapay-api.onrender.com/auth/status", {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
@@ -37,7 +37,7 @@ function ReceiveMoney() {
                 try {
                     // Replace this with the actual API call if you have one
                     const token = localStorage.getItem("token");  // Assuming token is needed
-                    const response = await axios.get("http://localhost:3000/transactions/show-all", {
+                    const response = await axios.get("https://mini-instapay-api.onrender.com/transactions/show-all", {
                         headers: {
                             Authorization: `Bearer ${token}`,
                         },
