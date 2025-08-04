@@ -52,7 +52,7 @@ function ViewHistory() {
 
     return (
         <div className="form-container container">
-            {userHistory.length > 0 ? (
+            {Array.isArray(userHistory) && userHistory.length > 0 ? (
                 userHistory.map((transaction) => (
                     <div key={transaction.id} className="list-item">
                         {/* Transaction Details */}

@@ -62,7 +62,7 @@ function TransactionsTab() {
         return <div>{error}</div>;
     }
 
-    if (!transactions || transactions.length === 0) {
+    if (!Array.isArray(transactions) || transactions.length === 0) {
         return <div>No transactions available.</div>;
     }
 

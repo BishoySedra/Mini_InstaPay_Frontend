@@ -60,7 +60,7 @@ function ReceiveMoney() {
 
     return (
         <div className="form-container container">
-            {receivedTransactions.length > 0 ? (
+            {Array.isArray(receivedTransactions) && receivedTransactions.length > 0 ? (
                 receivedTransactions.map((transaction) => (
                     <div key={transaction.id} className="list-item">
                         <div className="details">

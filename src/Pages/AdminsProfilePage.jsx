@@ -122,7 +122,7 @@ export default function AdminProfilePage({
             <label className="block text-lg font-bold mt-[30px] mb-[10px] text-view-button-bg-color">
               Bank Accounts
             </label>
-            {bankAccounts.length > 0 ? (
+            { Array.isArray(bankAccounts) && bankAccounts.length > 0 ? (
               bankAccounts.map((account, index) => (
                 <div key={index} className="flex items-center gap-4 mb-2">
                   <div className="flex flex-col">

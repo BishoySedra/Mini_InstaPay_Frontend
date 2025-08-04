@@ -267,7 +267,7 @@ export default function ProfilePage() {
 
         <div className="flex-1">
           <label className="block text-sm font-medium mb-2">Bank Accounts</label>
-          {profile.bankAccounts.length > 0 ? (
+          {Array.isArray(profile.bankAccounts) && profile.bankAccounts.length > 0 ? (
             profile.bankAccounts.map((account, index) => (
               <div key={account.id || index} className="flex items-center gap-4 mb-2">
                 <input
