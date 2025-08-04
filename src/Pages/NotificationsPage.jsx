@@ -12,7 +12,7 @@ export default function NotificationsPage() {
       const token = localStorage.getItem("token");
       try {
         // Fetch user status to get the ID
-        const userResponse = await axios.get("https://mini-instapay-api.onrender.com/auth/status", {
+        const userResponse = await axios.get("https://mini-instapay-api.onrender.com/users/status", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

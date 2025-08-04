@@ -14,7 +14,7 @@ function ViewHistory() {
         const fetchUserStatus = async () => {
             const token = localStorage.getItem("token");
             try {
-                const response = await axios.get("https://mini-instapay-api.onrender.com/auth/status", {
+                const response = await axios.get("https://mini-instapay-api.onrender.com/users/status", {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
